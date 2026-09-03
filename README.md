@@ -1,11 +1,6 @@
 # Docker ELK stack + Grafana
 
-Run the ELK stack (Elasticsearch, Logstash, Kibana) + Grafana with Docker,
-updated to current stable releases.
-
-The main purpose for this kind of distribution is educational.
-You can play with the ELK stack and compare visual graphs provided by Kibana
-and Grafana on top of the same Elasticsearch data.
+Run the Elasticsearch, Logstash, Kibana, Grafana with Docker.
 
 Based on the official images:
 
@@ -59,24 +54,7 @@ Stop everything (and drop the named volumes) with:
 $ docker compose down -v
 ```
 
-## Notes on what changed vs. the old (2016-era) version
-
-- Compose file uses the current `services:` top-level key and `docker compose`
-  syntax (no `version:` key needed, `links:` replaced by a shared network).
-- Kibana is pulled directly from Elastic's registry — no local `Dockerfile`
-  build is needed anymore.
-- Logstash pipeline config now lives in `logstash/pipeline/` (the modern
-  convention), while `logstash/config/logstash.yml` holds settings.
-- Elasticsearch/Kibana 9.x enable security (TLS + auth) by default; this repo
-  disables `xpack.security.enabled` to keep the lab simple, matching the
-  original's zero-auth setup. **Don't do this outside a local sandbox** —
-  for anything shared, enable security and set real credentials instead.
-- Elasticsearch and Grafana now persist data in named volumes
-  (`esdata`, `grafanadata`) so indices and dashboards survive a restart.
-- Healthchecks gate startup order instead of the old `links:` ordering.
-
 This package uses compatible versions across all the products:
-
 - elasticsearch 9.5.1
 - logstash 9.5.1
 - kibana 9.5.1
