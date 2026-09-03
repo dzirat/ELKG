@@ -1,4 +1,4 @@
-# Docker ELK stack + Grafana
+# Docker ELK stack + Grafana 
 
 Run the Elasticsearch, Logstash, Kibana, Grafana with Docker.
 
