@@ -14,6 +14,8 @@ Based on the official images:
 1. Install [Docker](https://docs.docker.com/get-docker/) and the
    [Compose plugin](https://docs.docker.com/compose/install/) (bundled with
    Docker Desktop; `docker compose`, not the old standalone `docker-compose`).
+   '  curl -fsSL https://get.docker.com | sh
+      sudo usermod -aG docker $USER'
 2. Clone this repository.
 
 ## Usage
