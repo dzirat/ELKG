@@ -15,12 +15,13 @@ Based on the official images:
    [Compose plugin](https://docs.docker.com/compose/install/) (bundled with
    Docker Desktop; `docker compose`, not the old standalone `docker-compose`).
 
-   ```
+```
 curl -fsSL https://get.docker.com | sh
-   ```
-   ```
+```
+```
 sudo usermod -aG docker $USER
-   ```
+```
+
 2. Clone this repository.
 `curl https://github.com/dzirat/ELKG`
 
