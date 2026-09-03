@@ -23,7 +23,9 @@ sudo usermod -aG docker $USER
 ```
 
 2. Clone this repository.
-`curl https://github.com/dzirat/ELKG`
+```
+git clone https://github.com/dzirat/ELKG.git
+```
 
 ## Usage
 
