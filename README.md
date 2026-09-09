@@ -1,13 +1,13 @@
-# Docker ELK stack + Grafana 
+# Docker: ELK + Grafana 
 
 Run the Elasticsearch, Logstash, Kibana, Grafana with Docker.
 
 Based on the official images:
 
-- [elasticsearch](https://www.docker.elastic.co/r/elasticsearch/elasticsearch) — 9.5.1
-- [logstash](https://www.docker.elastic.co/r/logstash/logstash) — 9.5.1
-- [kibana](https://www.docker.elastic.co/r/kibana/kibana) — 9.5.1
-- [grafana](https://hub.docker.com/r/grafana/grafana/) — 13.1.0
+- [elasticsearch](https://www.docker.elastic.co/r/elasticsearch/elasticsearch) — 9.5.3
+- [logstash](https://www.docker.elastic.co/r/logstash/logstash) — 9.5.3
+- [kibana](https://www.docker.elastic.co/r/kibana/kibana) — 9.5.3
+- [grafana](https://hub.docker.com/r/grafana/grafana/) — latest
 
 ## Setup
 
