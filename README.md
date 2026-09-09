@@ -66,7 +66,7 @@ $ docker compose down -v
 ```
 
 This package uses compatible versions across all the products:
-- elasticsearch 9.5.1
-- logstash 9.5.1
-- kibana 9.5.1
-- grafana 13.1.0
+- elasticsearch 9.5.3
+- logstash 9.5.3
+- kibana 9.5.3
+- grafana 13.1.0 (using latest build here)
