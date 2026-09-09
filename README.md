@@ -46,11 +46,10 @@ $ echo '{"message": "hello from bash"}' | nc localhost 5000
 ```
 
 - Access Kibana at <http://localhost:5601>.
-- Access Grafana at <http://localhost:3000> (default login `admin` / `admin`,
-  you'll be prompted to change it on first login). An Elasticsearch
-  datasource pointing at `logs_*` is provisioned automatically.
+- Access Grafana at <http://localhost:3000> (default login `admin` / `admin`).
+- An Elasticsearch datasource pointing at `logs_*` is provisioned automatically.
 
-By default, the stack exposes the following ports:
+Default ports:
 
 - `5000`: Logstash TCP + UDP input 1 (indexed into `logs_tcp-5000-index-%{+YYYY.MM.dd}` / `logs_udp-5000-index-%{+YYYY.MM.dd}`)
 - `6000`: Logstash TCP input 2 (indexed into `logs_tcp-6000-index-%{+YYYY.MM.dd}`)
@@ -65,8 +64,8 @@ Stop everything (and drop the named volumes) with:
 $ docker compose down -v
 ```
 
-This package uses compatible versions across all the products:
+This package uses next versions:
 - elasticsearch 9.5.3
 - logstash 9.5.3
 - kibana 9.5.3
-- grafana 13.1.0 (using latest build here)
+- grafana latest
