@@ -1,6 +1,6 @@
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:9.5.1
+    image: elastic/elasticsearch:9.5.3
     container_name: elasticsearch
     environment:
       - discovery.type=single-node
@@ -22,7 +22,7 @@ services:
       - elkg
 
   logstash:
-    image: docker.elastic.co/logstash/logstash:9.5.1
+    image: elastic/logstash:9.5.3
     container_name: logstash
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
@@ -40,7 +40,7 @@ services:
       - elkg
 
   kibana:
-    image: docker.elastic.co/kibana/kibana:9.5.1
+    image: elastic/kibana:9.5.3
     container_name: kibana
     volumes:
       - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
@@ -53,7 +53,7 @@ services:
       - elkg
 
   grafana:
-    image: grafana/grafana:13.1.0
+    image: grafana/grafana
     container_name: grafana
     volumes:
       - grafanadata:/var/lib/grafana
