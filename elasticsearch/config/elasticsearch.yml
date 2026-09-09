@@ -5,6 +5,5 @@ network.host: 0.0.0.0
 discovery.type: single-node
 
 # Security is disabled here purely to keep this educational stack simple.
-# Re-enable xpack.security.enabled and configure TLS/users for anything
-# beyond a local sandbox.
+# Re-enable xpack.security.enabled if you need it
 xpack.security.enabled: false
